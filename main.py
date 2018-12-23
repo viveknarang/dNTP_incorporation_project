@@ -19,11 +19,12 @@ def main():
         plot(flow, number_of_incorporation, flow_order)
     logging.info("main: complete ...")
 
+    # main()
 
-main()
 
-# flow = ['T', 'A', 'T', 'G', 'T', 'C', 'B', 'A', 'G', 'T', 'G', 'C', 'A', 'T', 'G', 'T', 'C', 'A', 'T', 'G', 'T', 'C',
-#        'A']
-# sequence = ['T', 'C', 'A', 'G', 'G', 'G', 'C', 'A', 'G', 'C', 'G', 'C', 'A', 'A', 'A', 'A', 'B', 'C', 'D']
-# number_of_incorporation = analyze(flow, sequence)
-# plot(flow, number_of_incorporation, "Test")
+flow = ['T', 'A', 'T', 'G', 'T', 'C', 'B', 'A', 'G', 'T', 'G', 'C', 'A', 'T', 'G', 'T', 'C', 'A', 'T', 'G', 'T', 'C',
+        'A']
+sequence = ['T', 'C', 'A', 'G', 'G', 'G', 'C', 'A', 'G', 'C', 'G', 'C', 'A', 'A', 'A', 'A', 'G', 'G', 'G', 'A', 'A',
+            'G', 'A', 'T', 'A']
+number_of_incorporation = analyze(flow, sequence)
+plot(flow, number_of_incorporation, "Test")
