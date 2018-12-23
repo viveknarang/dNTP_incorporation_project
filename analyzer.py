@@ -1,5 +1,8 @@
 import logging
 
+__author__ = "Vivek Narang"
+__status__ = "Development"
+
 
 def analyze(flow_order, sequence):
     logging.info("analyze: commencing analysis...")

@@ -5,7 +5,8 @@ from h5reader import read_flow_order
 from analyzer import analyze
 from plotter import plot
 
-logging.getLogger().setLevel(logging.INFO)
+__author__ = "Vivek Narang"
+__status__ = "Development"
 
 
 def main():
@@ -20,6 +21,7 @@ def main():
     logging.info("main: complete ...")
 
 
+logging.getLogger().setLevel(logging.INFO)
 main()
 
 # flow = ['T', 'A', 'T', 'G', 'T', 'C', 'B', 'A', 'G', 'T', 'G', 'C', 'A', 'T', 'G', 'T', 'C', 'A', 'T', 'G', 'T', 'C',

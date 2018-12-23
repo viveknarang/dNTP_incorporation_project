@@ -2,6 +2,9 @@ import logging
 from Bio import SeqIO
 from constants import *
 
+__author__ = "Vivek Narang"
+__status__ = "Development"
+
 
 def read_sequence():
     logging.info("read_fasta: attempting to read the sequence...")

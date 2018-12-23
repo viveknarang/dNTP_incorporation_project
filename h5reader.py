@@ -2,6 +2,9 @@ import logging
 import h5py
 from constants import *
 
+__author__ = "Vivek Narang"
+__status__ = "Development"
+
 
 def read_flow_order():
     logging.info("read_h5: attempting to read the h5 file...")
