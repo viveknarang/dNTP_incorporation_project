@@ -1,7 +1,7 @@
 import logging
 
-from fastareader import read_fasta
-from h5reader import read_h5
+from fastareader import read_sequence
+from h5reader import read_flow_order
 from analyzer import analyze
 from plotter import plot
 
@@ -10,8 +10,8 @@ logging.getLogger().setLevel(logging.INFO)
 
 def main():
     logging.info("main: begin ...")
-    sequence = read_fasta()
-    flow_order_map = read_h5()
+    sequence = read_sequence()
+    flow_order_map = read_flow_order()
     for flow_order in flow_order_map:
         logging.info("For flow order: " + flow_order)
         flow = flow_order_map.get(flow_order)

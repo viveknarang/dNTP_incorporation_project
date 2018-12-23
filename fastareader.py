@@ -3,7 +3,7 @@ from Bio import SeqIO
 from constants import *
 
 
-def read_fasta():
+def read_sequence():
     logging.info("read_fasta: attempting to read the sequence...")
 
     record_dict = SeqIO.to_dict(SeqIO.parse(DATA_DIR + FASTA_FILE, "fasta"))
