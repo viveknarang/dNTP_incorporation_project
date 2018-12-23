@@ -6,4 +6,4 @@ FASTA_FILE = "sequence.fasta"
 
 PLOTTER_X_LABEL = "Flow Order"
 PLOTTER_Y_LABEL = "Number of Incorporation"
-PLOTTER_TITLE = "dNTP"
+PLOTTER_TITLE = "dNTP Plot for flow order: "
