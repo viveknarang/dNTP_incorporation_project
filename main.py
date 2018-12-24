@@ -29,6 +29,8 @@ def main():
 
 # TEST CASE - AS GIVEN IN THE ASSIGNMENT DESCRIPTION #
 def test():
+    logging.info("test: begin ...")
+
     # test flow order
     flow = ['T', 'A', 'T', 'G', 'T', 'C', 'B', 'A', 'G', 'T', 'G', 'C', 'A', 'T', 'G', 'T', 'C', 'A', 'T', 'G', 'T',
             'C',
@@ -45,6 +47,7 @@ def test():
     logging.info(number_of_incorporation)
     # test output plotting
     plotter.plot(flow, number_of_incorporation, "Test")
+    logging.info("test: complete ...")
 
 
 # setting log level
@@ -53,6 +56,8 @@ logging.getLogger().setLevel(logging.INFO)
 # Assumptions:
 # [1] non empty inputs
 # [2] first value in the incorporation array is not required to be non zero
+# [3] each flow is a separate data set in the h5 file with a unique key example: flow_order, flow_order1 etc ...
+
 
 # calling main (optionally test) function
 main()
