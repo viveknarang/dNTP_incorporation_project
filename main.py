@@ -1,9 +1,9 @@
 import logging
+import fastareader
+import h5reader
+import analyzer
+import plotter
 
-from fastareader import read_sequence
-from h5reader import read_flow_order
-from analyzer import analyze
-from plotter import plot
 
 __author__ = "Vivek Narang"
 __status__ = "Development"
@@ -11,13 +11,13 @@ __status__ = "Development"
 
 def main():
     logging.info("main: begin ...")
-    sequence = read_sequence()
-    flow_order_map = read_flow_order()
+    sequence = fastareader.read_sequence()
+    flow_order_map = h5reader.read_flow_order()
     for flow_order in flow_order_map:
         logging.info("For flow order: " + flow_order)
         flow = flow_order_map.get(flow_order)
-        number_of_incorporation = analyze(flow, sequence)
-        plot(flow, number_of_incorporation, flow_order)
+        number_of_incorporation = analyzer.analyze(flow, sequence)
+        plotter.plot(flow, number_of_incorporation, flow_order)
     logging.info("main: complete ...")
 
 

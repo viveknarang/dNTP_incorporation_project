@@ -1,6 +1,6 @@
 import logging
 import h5py
-from constants import *
+import constants
 
 __author__ = "Vivek Narang"
 __status__ = "Development"
@@ -9,7 +9,7 @@ __status__ = "Development"
 def read_flow_order():
     logging.info("read_h5: attempting to read the h5 file...")
     return_map = {}
-    data = h5py.File(DATA_DIR + H5_FILE, "r")
+    data = h5py.File(constants.DATA_DIR + constants.H5_FILE, "r")
     for key in data.keys():
         a_list = []
         for value in data[key]:
